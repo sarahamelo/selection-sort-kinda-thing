@@ -90,18 +90,15 @@ def linear_search_steps(deck, target):
 Este gráfico compara a quantidade de passos necessários para encontrar cada número em ambos os baralhos:
 - **Busca Linear em Ambos os Baralhos (Código 1)**:
   - A quantidade de passos depende da posição do número. Se o número estiver próximo do início, a busca é mais rápida. Se estiver no final, são necessários mais passos.
-- **Busca Binária vs. Busca Linear (Código 2)**:
-  - A busca binária no baralho organizado geralmente requer menos passos, especialmente em listas maiores, enquanto a busca linear pode levar mais tempo em um baralho desorganizado.
 
 ### Gráfico 2: Probabilidade de a Busca Binária Ser Mais Rápida
 ![linear_and_binary_search_graph](https://github.com/user-attachments/assets/9cd71dcf-f667-4d5f-8c7f-308348cf5d59)
 
-Este gráfico mostra a probabilidade de a busca binária em um baralho organizado ser mais rápida do que a busca linear em um baralho desorganizado:
-- **Interpretação**:
-  - Se a barra estiver em 1, a busca binária foi mais rápida.
-  - Se a barra estiver em 0, a busca linear foi mais rápida ou ambas tiveram a mesma quantidade de passos.
+- **Busca Binária vs. Busca Linear (Código 2)**:
+  - A busca binária no baralho organizado geralmente requer menos passos, especialmente em listas maiores, enquanto a busca linear pode levar mais tempo em um baralho desorganizado.
+    
 - **Conclusão dos Gráficos**:
-  - A busca binária é mais eficiente em listas grandes, enquanto a busca linear pode ser competitiva em listas pequenas.
+  - Como o número de cartas são poucas, o baralho desorganizado acaba tendo uma maior perfomance, pois a probabilidade de você encontrar um número alto no começo é maior que encontrá-lo em um baralho organizado. Claro, na vida real, acabamos por decorar o que nós mesmos embaralhamos, mas por código, tentando ser o mais realista possível, o desorganizado é mais eficiente.
 
 ## 4. Tempo de Execução e Notação Big O
 
